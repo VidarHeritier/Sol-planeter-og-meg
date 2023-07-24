@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./Images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Notable&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+    <title>Space You!</title>
+  </head>
+  <body>
+    <header>
+      <h1>How much would you weigh on different celestial bodies?</h1>
+    </header>
+    <div class="container">
+      <div class="item-earth items">
+        <h4 class="celestial-body">Earth</h4>
+        <img src="./Images/Earth.png" alt="earth" />
+        <h4 class="weight" id="w-earth"></h4>
+      </div>
+      <div class="item-jupiter items">
+        <h4 class="celestial-body">Jupiter</h4>
+        <img src="./Images/Jupiter.png" alt="jupiter" />
+        <h4 class="weight" id="w-jupiter"></h4>
+      </div>
+      <div class="item-mars items">
+        <h4 class="celestial-body">Mars</h4>
+        <img src="./Images/Mars.png" alt="mars" />
+        <h4 class="weight" id="w-mars"></h4>
+      </div>
+      <div class="item-mercury items">
+        <h4 class="celestial-body">Mercury</h4>
+        <img src="./Images/Mercury.png" alt="mercury" />
+        <h4 class="weight" id="w-mercury"></h4>
+      </div>
+      <div class="item-moon items">
+        <h4 class="celestial-body">Moon</h4>
+        <img src="./Images/Moon.png" class="moon-img" alt="moon" />
+        <h4 class="weight" id="w-moon"></h4>
+      </div>
+      <div class="item-neptune items">
+        <h4 class="celestial-body">Neptune</h4>
+        <img src="./Images/Neptune.png" alt="neptune" />
+        <h4 class="weight" id="w-neptune"></h4>
+      </div>
+      <div class="item-pluto items">
+        <h4 class="celestial-body">Pluto</h4>
+        <img src="./Images/Pluto.png" alt="pluto" />
+        <h4 class="weight" id="w-pluto"></h4>
+      </div>
+      <div class="item-saturn items">
+        <h4 class="celestial-body">Saturn</h4>
+        <img src="./Images/Saturn.png" class="saturn-img" alt="saturn" />
+        <h4 class="weight" id="w-saturn"></h4>
+      </div>
+      <div class="item-sun items">
+        <h4 class="celestial-body">Sun</h4>
+        <img src="./Images/Sun.png" class="sun-img" alt="sun" />
+        <h4 class="weight" id="w-sun"></h4>
+      </div>
+      <div class="item-uranus items">
+        <h4 class="celestial-body">Uranus</h4>
+        <img src="./Images/Uranus.png" alt="uranus" />
+        <h4 class="weight" id="w-uranus"></h4>
+      </div>
+      <div class="item-venus items">
+        <h4 class="celestial-body">Venus</h4>
+        <img src="./Images/Venus.png" alt="venus" />
+        <h4 class="weight" id="w-venus"></h4>
+      </div>
+      <div class="item-spaceman items">
+        <img src="./Images/SpaceMan.webp" class="spaceman-img" alt="spaceman" />
+        <div id="input-info">
+          <form>
+            <input
+              type="number"
+              name="weight"
+              class="input-weight blink"
+              placeholder="Input weight"
+              maxlength="4"
+              id="input-field"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="item-rocket items">
+        <img src="./Images/Rocket.webp" alt="rocket" />
+      </div>
+    </div>
+    <div>
+      <h2>
+        Type weight and press
+        <form type="submit" class="submit" id="submit-btn">enter</form>
+      </h2>
+    </div>
+  </body>
+</html>
