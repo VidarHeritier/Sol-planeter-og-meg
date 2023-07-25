@@ -1,5 +1,6 @@
 const submitBtn = document.getElementById("submit-btn");
 const planetText = document.querySelectorAll("h4");
+const planetsH4 = document.querySelectorAll(".celestial-body");
 
 const earthWeight = document.getElementById("w-earth");
 const moonWeight = document.getElementById("w-moon");
@@ -43,6 +44,9 @@ function weightConvert() {
   neptuneWeight.textContent = `${neptune}`;
   plutoWeight.textContent = `${pluto}`;
   uranusWeight.textContent = `${uranus}`;
+
+  initialWeight.value = "";
+  blink();
 }
 
 submitBtn.addEventListener("click", weightConvert, keyfunction);
@@ -52,25 +56,36 @@ initialWeight.addEventListener("keypress", function (event) {
     event.preventDefault();
     keyfunction();
     weightConvert();
-    blink();
   }
 });
 
 function keyfunction() {
   document.querySelectorAll("h4").forEach((h4) => {
     h4.style.visibility = "visible";
+    h4.style.animation = "fadeIn 5s";
   });
-  document.querySelectorAll("img").forEach((img) => {
+
+  document.querySelectorAll(".faded-img").forEach((img) => {
     img.style.filter = "none";
+    img.style.animation = "fadeIn 5s";
   });
+
+  document.querySelector(".sun-img").style.animation = "fadeIn 5s";
+  document.querySelector(".sun-img").style.animation = "sun-animation 6s";
+
   document.querySelector(".item-rocket").style.animation =
     "rocket-animation 3s infinite";
   document.querySelector(".sun-img").style.animation =
     "sun-animation 5s infinite";
 }
-
-document.addEventListener("keypress", keyfunction, false);
+document.addEventListener("keypress", keyfunction, true);
 
 function blink() {
   initialWeight.classList.remove("blink");
 }
+
+initialWeight.oninput = function () {
+  if (this.value.length > this.maxLength) {
+    this.value = this.value.slice(0, this.maxLength);
+  }
+};
