@@ -29,6 +29,7 @@ h2 {
   margin-bottom: 0;
 }
 .submit {
+  
   font-size: 1.2rem;
   transform: rotate(5deg);
 }
@@ -54,6 +55,7 @@ animation: 0;
   height: 156px;
 }
 h4 {
+  font-family: "Tektur", cursive;
   filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 5px);
   color: rgb(214, 214, 214);
   font-size: 1.2rem;
@@ -251,9 +253,10 @@ input {
   transform: rotate(5deg);
   box-shadow: inset whitesmoke 0px 0px 5px 2px;
   text-align: center;
-  font-size: 1.2rem;
+  font-family: "Tektur", cursive;
+  font-size: 1rem;
   opacity: 70%;
-  width: 7rem;
+  width: 8rem;
   height: 2rem;
   padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0);
@@ -543,7 +546,7 @@ input[type="number"] {
   }
   
   .item-rocket {
-    margin-top: 120px;
+
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -678,7 +681,7 @@ input[type="number"] {
   }
   
   .item-rocket {
-    margin-top: 120px;
+  
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
