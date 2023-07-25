@@ -1,7 +1,7 @@
 body {
   height: 100svh;
   background-size: cover;
-  background-image: url(./Images/Starry-bg.jpg);
+  background-image: url(./Images/Starry-bg.webp);
   margin: 0;
   width: 100vw;
   display: flex;
@@ -29,7 +29,6 @@ h2 {
   margin-bottom: 0;
 }
 .submit {
-  
   font-size: 1.2rem;
   transform: rotate(5deg);
 }
@@ -38,13 +37,14 @@ h2 {
   cursor: pointer;
 }
 img {
+  min-height: 1px;
+  min-width: none;
   max-width: 30%;
   max-height: 30%;
   filter: blur(3px) brightness(0.4);
-  
 }
 .faded-img {
-animation: 0;
+  animation: 0;
   -webkit-animation: 0;
   -moz-animation: 0;
   -o-animation: 0;
@@ -105,28 +105,48 @@ h4 {
   animation: none;
 }
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes sun-animation {
   0% {
@@ -447,7 +467,7 @@ input[type="number"] {
     font-size: 0.5rem;
     font-weight: 100;
   }
-
+}
 @media only screen and (max-width: 625px) {
   h1 {
     font-size: 0.7rem;
@@ -461,8 +481,6 @@ input[type="number"] {
   }
   h1,
   h2 {
-    
-    
     padding-top: 7px;
     letter-spacing: 3px;
   }
@@ -471,7 +489,6 @@ input[type="number"] {
   }
   .submit {
     font-size: 0.8rem;
-    
   }
   .container {
     display: grid;
@@ -487,7 +504,7 @@ input[type="number"] {
     grid-row-start: 1;
     grid-row-end: 2;
   }
-  
+
   .item-earth {
     margin-top: 100px;
     grid-column-start: 3;
@@ -502,7 +519,7 @@ input[type="number"] {
     grid-row-end: 4;
     height: 300px;
   }
-  
+
   .item-moon {
     margin-right: 50px;
     grid-column-start: 3;
@@ -510,7 +527,7 @@ input[type="number"] {
     grid-row-start: 3;
     grid-row-end: 4;
   }
-  
+
   .item-mars {
     margin-top: 10px;
     grid-column-start: 2;
@@ -544,9 +561,8 @@ input[type="number"] {
     grid-row-start: 2;
     grid-row-end: 3;
   }
-  
-  .item-rocket {
 
+  .item-rocket {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -597,7 +613,6 @@ input[type="number"] {
   }
   h1,
   h2 {
-    
     padding-top: 7px;
     letter-spacing: 3px;
   }
@@ -622,7 +637,7 @@ input[type="number"] {
     grid-row-start: 1;
     grid-row-end: 2;
   }
-  
+
   .item-earth {
     margin-top: 100px;
     grid-column-start: 3;
@@ -637,7 +652,7 @@ input[type="number"] {
     grid-row-end: 4;
     height: 300px;
   }
-  
+
   .item-moon {
     margin-right: 50px;
     grid-column-start: 3;
@@ -645,7 +660,7 @@ input[type="number"] {
     grid-row-start: 3;
     grid-row-end: 4;
   }
-  
+
   .item-mars {
     margin-top: 10px;
     grid-column-start: 2;
@@ -679,16 +694,15 @@ input[type="number"] {
     grid-row-start: 2;
     grid-row-end: 3;
   }
-  
+
   .item-rocket {
-  
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
     animation: none;
   }
-  
+
   .item-pluto {
     margin-top: 50px;
     grid-column-start: 4;
