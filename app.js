@@ -60,7 +60,7 @@ initialWeight.addEventListener("keypress", function (event) {
 });
 
 function keyfunction() {
-  document.querySelectorAll("h4").forEach((h4) => {
+  document.querySelectorAll("h2").forEach((h4) => {
     h4.style.visibility = "visible";
     h4.style.animation = "fadeIn 5s";
   });

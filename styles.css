@@ -13,13 +13,13 @@ h1 {
   margin: 0 auto 2rem auto;
   max-width: 70%;
 }
-h5 {
+h3 {
   font-size: 1rem;
   max-width: 50%;
   margin: 0 auto;
 }
 h1,
-h5 {
+h3 {
   color: rgb(214, 214, 214);
   text-align: center;
   text-shadow: rgb(255, 0, 0) 1px 1px 2px, rgb(153, 248, 250, 0.5) 0px 0px 25px;
@@ -37,8 +37,8 @@ h5 {
   cursor: pointer;
 }
 img {
-  min-height: 1px;
-  min-width: none;
+  height: 3;
+  width: 3;
   max-width: 30%;
   max-height: 30%;
   filter: blur(3px) brightness(0.4);
@@ -54,7 +54,7 @@ img {
   text-align: center;
   height: 156px;
 }
-h4 {
+h2 {
   font-family: "Tektur", cursive;
   filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 5px);
   color: rgb(214, 214, 214);
@@ -343,17 +343,17 @@ input[type="number"] {
     margin: 0 auto 1.5rem auto;
     max-width: 70%;
   }
-  h5 {
+  h3 {
     font-size: 1rem;
     max-width: 100%;
     margin: 0 auto;
   }
   h1,
-  h5 {
+  h3 {
     padding-top: 7px;
     letter-spacing: 3px;
   }
-  h4 {
+  h2 {
     font-size: 0.8rem;
   }
   .submit {
@@ -474,17 +474,17 @@ input[type="number"] {
     margin: 0 auto 1.5rem auto;
     max-width: 70%;
   }
-  h5 {
+  h3 {
     font-size: 0.7rem;
     max-width: 100%;
     margin: 1rem auto 0 auto;
   }
   h1,
-  h5 {
+  h3 {
     padding-top: 7px;
     letter-spacing: 3px;
   }
-  h4 {
+  h2 {
     font-size: 0.8rem;
   }
   .submit {
@@ -606,17 +606,17 @@ input[type="number"] {
     margin: 0 auto 1.2rem auto;
     max-width: 70%;
   }
-  h5 {
+  h3 {
     font-size: 0.5rem;
     max-width: 100%;
     margin: 1rem auto 0 auto;
   }
   h1,
-  h5 {
+  h3 {
     padding-top: 7px;
     letter-spacing: 3px;
   }
-  h4 {
+  h2 {
     font-size: 0.6rem;
   }
   .submit {
