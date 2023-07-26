@@ -49,6 +49,7 @@ function weightConvert() {
 
   initialWeight.value = "";
   blink();
+  initialWeight.blur();
 }
 
 submitBtn.addEventListener("click", weightConvert, keyfunction);
@@ -99,24 +100,3 @@ initialWeight.oninput = function () {
 rocket.addEventListener("click", () => {
   rocket.remove();
 });
-
-const hideMobileKeyboardOnReturn = (keyboardEvent) => {
-  element.addEventListener("keyup", (keyboardEvent) => {
-    if (keyboardEvent.code === "Enter") {
-      element.blur();
-    }
-  });
-};
-
-document.querySelementectorAll("[type=search]").forEach((element) => {
-  hideMobileKeyboardOnReturn(element);
-});
-
-// const hideMobileKeyboardOnReturn = (element) => {
-//   element.addEventListener("keyup", (keyboardEvent) => {
-//     const key = keyboardEvent.code || keyboardEvent.keyCode;
-//     if (key === "Enter" || key === 13) {
-//       element.blur();
-//     }
-//   });
-// };
