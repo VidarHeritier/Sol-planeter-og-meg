@@ -100,11 +100,23 @@ rocket.addEventListener("click", () => {
   rocket.remove();
 });
 
-const hideMobileKeyboardOnReturn = (element) => {
+const hideMobileKeyboardOnReturn = (keyboardEvent) => {
   element.addEventListener("keyup", (keyboardEvent) => {
-    const key = keyboardEvent.code || keyboardEvent.keyCode;
-    if (key === "Enter" || key === 13) {
+    if (keyboardEvent.code === "Enter") {
       element.blur();
     }
   });
 };
+
+document.querySelementectorAll("[type=search]").forEach((element) => {
+  hideMobileKeyboardOnReturn(element);
+});
+
+// const hideMobileKeyboardOnReturn = (element) => {
+//   element.addEventListener("keyup", (keyboardEvent) => {
+//     const key = keyboardEvent.code || keyboardEvent.keyCode;
+//     if (key === "Enter" || key === 13) {
+//       element.blur();
+//     }
+//   });
+// };
