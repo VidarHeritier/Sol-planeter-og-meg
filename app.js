@@ -67,14 +67,15 @@ function keyfunction() {
 
   document.querySelectorAll(".faded-img").forEach((img) => {
     img.style.filter = "none";
-    img.style.animation = "fadeIn 5s";
+    img.style.animation =
+      "fadeIn 5s, spin 30s cubic-bezier(0, 0, 1, 1) infinite";
   });
 
   document.querySelector(".sun-img").style.animation = "fadeIn 5s";
   document.querySelector(".sun-img").style.animation = "sun-animation 6s";
 
   document.querySelector(".item-rocket").style.animation =
-    "rocket-animation 3s infinite";
+    "rocket-animation 3s cubic-bezier(0, 0, 1, 1) infinite";
   document.querySelector(".sun-img").style.animation =
     "sun-animation 5s infinite";
 }
