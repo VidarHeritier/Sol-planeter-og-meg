@@ -14,6 +14,8 @@ const saturnWeight = document.getElementById("w-saturn");
 const uranusWeight = document.getElementById("w-uranus");
 const plutoWeight = document.getElementById("w-pluto");
 
+const rocket = document.querySelector(".rocket");
+
 const initialWeight = document.getElementById("input-field");
 
 function weightConvert() {
@@ -62,7 +64,7 @@ initialWeight.addEventListener("keypress", function (event) {
 function keyfunction() {
   document.querySelectorAll("h2").forEach((h4) => {
     h4.style.visibility = "visible";
-    h4.style.animation = "fadeIn 5s";
+    h4.style.animation = "fadeIn 2s cubic-bezier(0, 0, 1, 1)";
   });
 
   document.querySelectorAll(".faded-img").forEach((img) => {
@@ -73,6 +75,9 @@ function keyfunction() {
 
   document.querySelector(".sun-img").style.animation = "fadeIn 5s";
   document.querySelector(".sun-img").style.animation = "sun-animation 6s";
+
+  document.querySelector("h1").style.animation = "scaleZero 1s forwards";
+  document.querySelector(".h3scale").style.animation = "scaleZero 1s forwards";
 
   document.querySelector(".item-rocket").style.animation =
     "rocket-animation 3s cubic-bezier(0, 0, 1, 1) infinite";
@@ -90,3 +95,7 @@ initialWeight.oninput = function () {
     this.value = this.value.slice(0, this.maxLength);
   }
 };
+
+rocket.addEventListener("click", () => {
+  rocket.remove();
+});
